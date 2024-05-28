@@ -13,8 +13,13 @@ APPROVED_BREEDS = [
 class Dog:
     def __init__(self, name='Fido', breed='Mastiff'):
         self.name = name
-        self.breed = breed
+        self.breed = breed    
 
+    @property
+    def name(self):
+        """The name property"""
+        return self._name
+    
     def get_name(self):
         return self._name
 
